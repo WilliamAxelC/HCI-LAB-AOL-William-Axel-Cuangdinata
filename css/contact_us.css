@@ -1,0 +1,125 @@
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    /* padding: 1rem; */
+}
+
+.contact_form_container{
+    background: linear-gradient(to bottom, rgba(11, 13, 14, 1), rgba(24, 46, 86, 0.2));
+    max-width: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+}
+
+.contact_form_container h2{
+    color: white;
+}
+
+.contact_form_container label{
+    color: white;
+}
+
+.map_container{
+    text-decoration:none; 
+    overflow:hidden;
+    max-width:100%;
+    width:200px;
+    height:200px;
+}
+
+.map_container iframe{
+    height:100%;
+    width:100%;
+    border:0;
+}
+
+.contact_us_container{
+    gap: 1rem;
+    margin-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.contact_us_container .other_contacts{
+    background: linear-gradient(to bottom, rgba(11, 13, 14, 1), rgba(24, 46, 86, 0.2));
+    max-width: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+}
+
+.contact_form_container input[type="tel"] , input[type="text"], input[type="email"]{
+    width: 100%;
+    background-color: hsla(219, 56%, 15%);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 5px;
+    resize: none;
+    height: 1em;
+    font-size: 1rem;
+    padding: 1em 6px;
+    color: white;
+    margin-block-end: 0.5rem;
+}
+
+.contact_form_container textarea{
+    width: 100%;
+    background-color: hsla(219, 56%, 15%);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    padding: 6px;
+    color: white;
+    margin-block-end: 0.5rem;
+}
+
+.contact_form_container input[type="submit"]{
+    width: 40%;
+    background-color: hsla(219, 56%, 15%);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    padding: 6px;
+    color: white;
+    margin-block-start: 1rem;
+}
+
+.contact_form_container input[type="checkBox"]{
+    background-color: hsla(219, 56%, 15%);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    padding: 6px;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .contact_us_container{
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    .contact_us_container .other_contacts{
+        max-width: 300px;
+    }
+}

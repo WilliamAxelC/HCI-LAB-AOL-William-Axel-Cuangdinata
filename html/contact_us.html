@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/contact_us.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" href="../assets/JCC LogoOnly_white.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/JCC LogoOnly_white.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="topnav">
+        <a href="./home.html" class="logo_link"> <img src="../assets/JCC logo_White.svg" alt="Logo" class="logo"></a>
+        <ul class="topnav_menu">
+            <li><a href="./home.html" class="topnav_item">Home</a> </li>
+            <li><a href="./events.html"class="topnav_item">Events</a></li>
+            <li><a href="./prices.html"class="topnav_item">Prices</a></li>
+            <li><a href="./about_us.html"class="topnav_item">About Us</a></li>
+            <li><div class="topnav_contact_us_li">
+                <a href="./contact_us.html"class="topnav_contact_us_button">Contact Us</a>
+            </div></li>
+        </ul>
+        <div class="topnav_contact_us">
+            <a href="./contact_us.html"class="topnav_contact_us_button">Contact Us</a>
+        </div>
+        
+        <div class="hamburger_menu">
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+        </div>
+    </nav>
+        
+    <div class="main_content">
+        <div class="contact_us_container">
+            <div class="contact_form_container">
+                <h2>Contact Us</h2>
+                <form name="contact_form" onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name"><br>
+    
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email"><br>
+    
+                    <label for="phone">Phone Number:</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone"><br>
+    
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="4"></textarea><br>
+    
+                    <label for="contactMethod">Preferred Contact Method:</label><br>
+                    <input type="checkbox" id="contactMethodPhone" name="contactMethod" value="phone">
+                    <label for="contactMethodPhone">Phone</label><br>
+                    <input type="checkbox" id="contactMethodEmail" name="contactMethod" value="email">
+                    <label for="contactMethodEmail">Email</label><br>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="other_contacts">
+                <h4>Jockey's Convention Center</h4>
+                <p>123 Main Street, Jakarta, Indonesia</p>
+                <p>(+62)123 456 789</p>
+                <p>info@jcc.com</p>
+                <p>Google Maps</p>
+                <div class="map_container">
+                    <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Sentul+City+International+Convention+Center,+Jalan+Jendral+Sudirman,+Cipambuan,+Bogor+Regency,+West+Java,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                    <a class="google-maps-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="make-map-infor-mation"></a>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer_content">
+            <img src="../assets/JCC logo_White.svg" alt="logo" class="footer_logo">
+       
+            <ul class="footer_links">
+                <h1>Site Links</h1>
+                <li><a href="./home.html" class="nav">Home</a> </li>
+                <li><a href="./events.html"class="nav">Events</a></li>
+                <li><a href="./prices.html"class="nav">Prices</a></li>
+                <li><a href="./about_us.html"class="nav">About Us</a></li>
+                <li><a href="./contact_us.html"class="nav">Contact Us</a></li>
+            </ul>
+            <ul class="footer_contact">
+                <h1>Contact</h1>
+                <li>Jockey's Conference Center (JCC)</li>
+                <li><a href=""">
+                    <img src="../assets/Location Icon_white.svg" alt="Location" class="footer_contact_icon"> 
+                    123 Main Street, Jakarta, Indonesia</a></li>
+                <li><a href="">
+                    <img src="../assets/Call_Icon_White.svg" alt="Call" class="footer_call_icon">
+                    +62 123 456 7890</a></li>
+                <li><a href="">
+                    <img src="../assets/Mail_Icon_white.svg" alt="Mail" class="footer_mail_icon">
+                    info@jcc.com</a></li>
+            </ul>
+        </div>
+        <div class="footer_legal">
+            <span>Designed and developed by BLEH. <br>
+                © 2023 Jockey's Conference Center. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/form_validation.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/carousel event.js"></script>
+</body>
+
+</html>
